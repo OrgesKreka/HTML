@@ -1,0 +1,327 @@
+/*===============================
+ ===== Stilizimi i Body-t =======
+ ================================ */
+
+ body
+ {
+ 	background-color: #DBE9F4;
+ 	font-size: 14px;
+ 	font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 
+ 	'Lucida Sans', Arial, sans-serif;
+
+ 	line-height: 1.429;
+
+ 	margin: 0;
+
+ 	padding: 0;
+
+ 	text-align: left;
+ }
+
+
+ .body
+ {
+ 	margin: 0 auto;
+ 	width: 70%;
+ }
+
+
+ /*============================
+   ========= Titujt ===========
+   ============================ */
+
+   h2
+   {
+   	font-size: 1.571em;
+   }
+
+
+
+
+   h2, h3, h4, h5, h6
+   {
+   	font-weight: 400;
+
+   	line-height: 1.1;
+
+   	margin-bottom: .8em;
+   }
+
+
+   /*==========================
+     ======Elementi Ankor======
+     ========================== */
+
+     a img
+     {
+     	border: 0px;
+
+     	text-decoration: none;
+     }
+
+     a:link, a:visited
+     {
+     	color: #CF5C3F;
+
+     	padding: 0 1px;
+
+      text-decoration: none; 
+     }
+
+
+     a:hover. a:active
+     {
+     	background-color: #CF5C3F;
+
+     	color: #fff;
+
+     	text-decoration: none;
+     }
+
+
+/*===============================
+  ======= Menuja Navigimit=======
+  =============================== */
+
+  .main nav
+  {
+  	background-color: #666;
+
+  	font-size: 1.143em;
+
+  	height: 40px;
+     
+  	line-height: 30px;
+
+  	margin: 0 auto 30px auto;
+
+  	text-align: center;
+
+  	border-radius: 5px;
+
+  }
+
+  .main nav ul
+  {
+  	list-style: none;
+
+  	margin: 0 auto;
+  }
+
+
+  .main nav ul li
+  {
+  	float: left;
+    
+  	display: inline;
+
+  	padding-right: 10px;
+  }
+
+
+  .main nav a:link, .main nav a:visited
+  {
+  	color: #fff;
+
+  	display: inline-block;
+
+  	height: 30px;
+
+  	padding: 5px 23px;
+
+  	text-decoration: none;
+  }
+
+  .main nav a:hover, .main nav a:active, .main nav .aktive a:link, .main nav .aktive a:visited
+  {
+  	background: #CF5C3F;
+
+  	color: #fff;
+  }
+
+  .main nav li a
+  {
+    border-radius: 5px;
+  }
+
+
+.main img
+{
+	width: 450px;
+
+	height: 200px;
+
+	margin: 3% 0;
+}
+
+
+/*======================================
+  ====== Zona Permbajtjes ==============
+  ====================================== */
+
+  .permbajtjaMain
+  {
+  	line-height: 25px;
+
+  	border-radius: 5px;
+  }
+
+  .topContent
+  {
+
+  	background-color: #fff;
+
+  	border-radius: 5px;
+
+  	padding: 3% 5%;
+
+  	margin-bottom: 3%;
+  }
+
+  .topContent h2 a, .bottomcontent h2 a
+  {
+  	text-transform: capitalize;
+  }
+
+  .bottomcontent
+  {
+  	background-color: #fff;
+
+  	padding: 3% 5%;
+
+  }
+
+  .permbajtja
+  {
+
+  	width: 68%;
+
+  	float: left;
+
+  	border-radius: 5px;
+
+  }
+
+ .post-info
+ {
+ 	font-style: italic;
+
+ 	color: #999;
+
+ 	font-size: 85%;
+ }
+
+
+ /*================================
+   ======== Sidebar ===============
+   ================================ */
+
+   .top-sidebar 
+   {
+   	width: 24%;
+
+   	float: left;
+
+   	margin-left: 2%;
+
+   	border-radius: 5px;
+
+   	background-color: #fff;
+
+
+   	margin-bottom: 2%;
+   }
+
+
+   .bottom-sidebar
+   {
+   	 width: 25%;
+
+   	 float: left;
+
+   	 margin-left: 2%;
+
+   	 background-color: #fff;
+
+   	
+   }
+
+ 
+
+   #klikueshem a:hover, #klikueshem a:active
+   {
+
+   	color: rgb(255, 255, 255);
+     
+     border-radius: 5px;
+
+   	background: #CF5C3F
+   }
+
+   .bottom-sidebar article h2
+   {
+    background: #666;
+   
+    padding: 10px 5px;
+
+     font-family: Tahoma;
+
+    color:white;
+   }
+
+   .top-sidebar article h2
+   {
+    background: #666;
+   
+    padding: 10px;
+
+    padding-left: 20px;
+
+    color:white;
+   }
+
+   /*==================================
+     ===== Butonat ====================
+     ================================== */
+
+  .buton area
+  {
+    outline: none;
+  }
+
+
+   /*===================================
+     ======= Footer ====================
+     =================================== */
+
+    .fundiMain
+    {
+    	width: 100%;
+
+    	float: left;
+
+    	margin-top: 2%;
+
+    	margin-bottom: 2%;
+
+    	background-color: #666;
+
+    	border-radius: 5px;
+
+    	color: #fff;
+    }
+     
+
+    .fundiMain p
+    {
+    	width: 91%;
+    	margin: 2% auto;
+    }
+
+    .fillim a
+    {   
+    	font-family: Consolas;
+
+    	padding-left: 200px;
+        
+    }

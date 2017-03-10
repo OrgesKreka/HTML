@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.body
+{   
+
+	background-color: #DBE9F4;
+
+}
+
+.titulli
+{
+	font-family: Consolas;
+     
+     background-color: #666;
+
+     border-radius: 5px;
+
+     padding-left: 150px;
+
+     color: #00FFFF;
+}
+
+input[ type = "text"], input[ type = "password"]
+{   
+     
+
+	width: 400px;
+
+	height: 50px;
+
+	background-color: #7FFFD4
+
+	text-align: center;
+
+	border-radius: 25px;
+
+	font-family: Tahoma;
+}
+
+input[type="text"], input[type = "password"], input[type="submit"]
+{
+        outline:none;
+}
+
+div.input1
+{   
+	padding-top: 50px;
+	padding-left: 200px;
+	padding-bottom: 20px;
+}
+
+div.input2
+{
+	padding-left: 200px;
+	padding-bottom: 20px;
+}
+
+div.buton
+{  
+    padding-left: 350px;
+}
+
+#kliko
+{  
+    background-position: right;
+    padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 5px;
+	padding-top: 5px; 
+}
+
+input#kliko:hover
+{
+background-position-float: right;
+
+background: #fff;
+
+color: #09c;
+
+}
+
+</style>
+
+<link rel="icon" href="detyra-foto/ikona.ico">
+</head>
+
+<!---------------------------------->
+
+<body class="body">
+<h1 class="titulli">Mir&#235;sevini n&#235; TuringKuiz </h1>
+
+<div class="input1">	
+	<input id="emaili" type="text" value="" placeholder="Emaili Perdoruesit..." style="text-align: center;" /> 
+</div>
+
+<div class="input2">
+	<input id="passwordi" type="password" value="" placeholder="Fjalekalimi Perdoruesit..." style="text-align: center;"/>
+</div>
+
+<p></p>
+<div class="buton">
+<input id="kliko" type="button" onclick="merrInput()" value="Log In" />
+</div>
+
+<script>
+function merrInput()
+{
+   var x = document.getElementById('emaili');
+
+   if(x.value =="" || x.value==null)
+   	alert("Ju lutemi jepni email te vlefshem!");
+   else
+   { 
+   	var y = document.getElementById('passwordi');
+
+   	if(y.value==null)
+   		alert("Fjalekalim i pavlefshem");
+   	 else
+   	 {
+   	 	 var emri = document.getElementById('emaili');
+
+   	 	var tabi = window.open('profili.html','_blank');
+     
+           tabi.myVariable = emri;
+     }
+   }
+
+}
+</script>
+</body>
+
+</html>

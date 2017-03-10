@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="icon" href="detyra-foto/ikona.ico" />
+
+<style>
+
+h1.titulli1
+{
+	background-color: #666;
+
+    color: #00FFFF;
+
+	font-family: Consolas;
+
+	border-radius: 10px;
+
+	padding: 5px;
+
+	padding-left: 200px;
+
+}
+
+img.foto
+{
+	padding-top: 40px;
+
+	padding-left: 20px;
+
+    float: left;
+
+}
+
+span.dil
+{
+	padding-left: 200px;
+
+	font-size: 20px;
+
+
+}
+
+.dil a
+{
+  text-decoration: none;
+
+  color: #fff;
+}
+.dil a:hover
+{
+	background-color: #CF5C3F;
+
+	padding: 5px, 23px;
+
+}
+
+
+ th
+{
+   text-align: left;
+
+   padding: 20px;
+
+   padding-left: 50px;
+
+   font-family: Consolas;
+
+   font-size: 20px;
+
+   color: #CF5C3F;
+}
+
+td
+{
+	font-size: 20px;
+
+	font-family: Consolas;
+}
+
+.teDhenat
+{
+	background-color: #C9FFE5;
+
+	border-radius: 5px;
+}
+
+.share, .teDhenat
+{
+	display: block;
+}
+
+.share
+{
+
+	padding-bottom: 200px;
+
+	font-family: Consolas;
+
+	font-size: 16px;
+	text-align: center;
+}
+
+.fshare
+{
+	background-image: url('detyra-foto/fshare.png');
+
+	width: 42px;
+
+	height: 30px;
+
+	padding: 15px;
+
+
+}
+
+.gshare
+{
+  background-image: url('detyra-foto/gshare1.png');
+
+	width: 40px;
+
+	height: 30px;
+
+	padding: 15px;
+}
+
+.fshare:hover, .fshare:active
+{
+	width: 122px;
+
+	height: 40px;
+
+	outline:none;
+}
+
+.gshare:hover, .gshare:active
+{
+	background-image: url('detyra-foto/gshare1.png');
+
+	width: 100px;
+
+	height: 30px;
+
+	outline: none;
+}
+
+b .p
+{
+	display: inline;
+
+	font-family: arial-black;
+
+	font-size: 16px;
+
+	color: #C9FFE5;
+}
+
+#lista
+{
+	padding: 5px;
+
+	font-family: Consolas;
+	font-size: 12px;
+
+
+}
+
+div#permbajtja
+{
+
+	visibility:hidden;
+
+	font-family: Tahoma;
+
+	font-size: 16px;
+
+}
+
+
+
+</style>
+</head>
+
+<body id="body">
+
+<!------------------------------------------>
+<script>
+
+var piket = 0;
+
+function shtoPike1()
+{
+   piket++;
+}
+
+
+function afishoPiket()
+{
+ var x = document.getElementById("piket").innerHTML;
+
+ x = parseInt(x);
+
+ document.getElementById("piket").innerHTML = x+piket;
+
+
+ document.getElementById("p").innerHTML = piket+"";
+
+
+ var y = document.getElementById("nLoja").innerHTML;
+
+ 		y = parseInt(y) + 1;
+
+ document.getElementById("nLoja").innerHTML = y;
+
+}
+
+
+function zgjedhja()
+{
+
+  var x = document.getElementById("lista").value;
+
+    if(x == "Gjeografi")
+    	document.getElementById("permbajtja").style.visibility="visible";
+    else
+    	document.write("Luani me vone...");
+
+
+
+}
+
+function shkoFb()
+{
+window.open('http://www.facebook.com','_blank');
+}
+
+</script>
+
+<h1 class="titulli1" align="center"> Profili i Perdoruesit <span class="dil"><a href="Detyre_Sisteme_Multimediale.html"> Dil </a></span></h1>
+
+<img class= "foto" src="detyra-foto/foto-profili.png" widht="200" height="160" alt="Emri i perdoruesit">
+
+<div class="teDhenat">
+	<table>
+		<tr>
+			<th>Emri: </td>
+			<td>Emri Lojtarit.</td>
+		</tr>
+
+		<tr>
+			<th>Numri i Lojave:</th>
+			<td><span id="nLoja">12</span>. </td>
+        </tr>
+
+		<tr>
+			<th>Piket e Grumbulluara:</th>
+			 <td><span id="piket"> 123</span>.</td>
+		</tr>
+
+		<tr>
+			<th> Piket e sotme:</th>
+			<td><span id="p"></span></td>
+		</tr>
+
+		<tr>
+			<th>Kuizi i Preferuar:</th>
+			<td>
+					<select id="lista">
+                 	<option value="Gjeografi">Gjeografi</option>
+                 	<option value="Histori">Histori</option>
+                 	<option value="Informatike" selected=true>Informatike</option>
+                 	<option value="Fizike">Fizike</option>
+                </select>
+
+                <button type="button"onclick="zgjedhja()">Ok</button>
+			</td>
+		</tr>
+	</table>
+
+   <br>
+
+   <div class="butona">
+	<p class="p"><b>Shperndaj Rezultatin</b></p>
+	 <input type="button"  class="fshare" onclick="shkoFb()"/>
+	 <input type="button" class="gshare" />
+   </div>
+</div>
+
+<hr>
+
+<div id="permbajtja">
+<p>Ne vendin me te nxehte ne planet temperatura mesatare vjetore eshte 34<sup>o</sup>C gjate diteve me te nxehta aty mund te skuqesh vezen nen rrezet e diellit. Kush eshte ky vend ? </p>
+<input onclick="shtoPike1()" name="p1"type="radio" value="etiopia">Etiopia<br>
+<input name="p1"type="radio" value="arabia">Arabia<br>
+<input name="p1"type="radio" value="sahara">Saharaja<br>
+<p></p>
+<hr>
+
+
+<p>Brigjet e kujt lumi ndodhen njeri ne Europe e njeri ne Azi?</p>
+<input onclick="shtoPike1()" name="p2"type="radio" value="ural">Ural<br>
+<input name="p2"type="radio" value="Amazona">Amazona<br>
+<input name="p2"type="radio" value="Vollga">Vollga<br>
+<hr>
+<p>
+Lumi qe derdh me shume uje ne sek. buron afer nje oqeani dhe pasi pershkon me teper se 6000 km, derdhet ne nje oqean tjeter, ne rrjedhen e poshtme ka nje gjeresi prej 20 km, kurse delta e tij ka nje gjeresi prej 80-230 km. Ne rrjedhen e mesme, thellesia e tij arrin ne 70 m. Si ne det edhe ketu ngrihen dallge me lartesi disa metra, madje te ze syri edhe delfine. Cili eshte ky lume ?</p>
+
+<input name="p3"type="radio" value="ural">Ural<br>
+<input onclick="shtoPike1()" name="p3"type="radio" value="Amazona">Amazona<br>
+<input name="p3"type="radio" value="Vollga">Vollga<br>
+
+<hr>
+
+<p>
+Qyteti i Tiranes ndodhet ne  41<sup>o</sup> 19<sup>'</sup> 31<sup>''</sup>. Nen cilin kend shihet ylli polar nga Tirana ?</p>
+
+<input name="p4"type="radio" value="21">21<sup>o</sup> 43 '<br>
+<input name="p4"type="radio" value="30">30<sup>o</sup> 50 '<br>
+<input onclick="shtoPike1()" name="p4"type="radio" value="41">21<sup>o</sup> 19 '<br>
+</hr>
+<p></p>
+<button onclick="afishoPiket()"> Afisho Piket</button>
+</div>
+
+
+</body>
+</html>

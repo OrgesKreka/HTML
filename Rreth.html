@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+	<style>
+		div
+		{
+			position: absolute;
+			overflow: hidden;
+		}
+	</style>
+</head>
+
+
+<body>
+
+	<script>
+
+
+		var n = 0;
+		var xQendra, yQendra;
+		var rrezja;
+
+		addEventListener( "click", function( event )
+		{
+			n++;
+
+			var r = Math.floor(Math.random() * 255);
+			var g = Math.floor(Math.random() * 255);
+			var b = Math.floor(Math.random() * 255);
+
+			var col = "rgb(" + r + "," + g + "," + b + ")";
+
+
+			var pike = document.createElement( "div" );
+
+
+			if( n == 1 )
+			{
+				xQendra = event.pageX;
+				yQendra = event.pageY;
+
+
+			}
+			else if( n == 2 )
+			{
+				rrezja = Math.sqrt( Math.pow( ( event.pageX - xQendra ), 2 )+ Math.pow( ( event.pageY - yQendra ), 2 ) );
+
+				rrezja = Math.ceil( rrezja );
+
+
+				xQendra -= rrezja;
+				yQendra -= rrezja;
+
+
+				 pike.style.width = 2 * rrezja + "px";
+				 pike.style.height = 2 * rrezja + 'px';
+				 pike.style.left = xQendra + "px";
+			     pike.style.top = yQendra + "px";
+				 pike.style.borderRadius = rrezja + "px";
+				 pike.style.backgroundColor = col;
+
+
+				 document.body.appendChild( pike );
+
+				n = 0;
+			}
+
+
+
+		});
+	</script>
+</body>

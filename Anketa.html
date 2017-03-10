@@ -1,0 +1,182 @@
+<!--
+///           Orges Kreka
+///    C1-Viti 2-Informatike.
+///       ANKETA Ndermjet Formave
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Anket&#235;</title>
+</head>
+
+<body>
+<h1 align="center">ANKET&#203;</h1>
+<hr />
+<img src="fshn.png" align="center"width="897" height="168" alt="logo FSHN" usemap="#fshn"/>
+<map name="fshn" >
+<area shape="rect" coords="0,0,897,168" href="http://www.fshn.edu.al"/>
+</map>
+<hr />
+
+<h2>Kjo anket&#235; &#235;sht&#235; n&#235; llogari t&#235; Fakultetit t&#235; Shkencave t&#235; Natyr&#235;s.<br>
+Ju lutem plot&#235;soni format n&#235; m&#235;nyr&#235; t&#235; sinqert&#235;.<br>
+Synimi &#235;sht&#235; t&#235; njehsoj&#235; performanc&#235;n e Fakultetit.<br>
+&#199;do informacion i dh&#235;n&#235; do sh&#235;rbej&#235; p&#235;r t'u p&#235;rmir&#235;suar.<br></h2>
+<br><br>
+
+<form action="regjister.php" action="post">
+
+    <fieldset>
+    <legend align="center" ><b><big><big><big>Informacion Personal
+    </big></big></big></b></legend>
+
+    <table border="0" cellspacing="20">
+         <tr>
+            <th>Emri:</th>
+            <td><input type="text" name="emri" /></td>
+         </tr>
+
+         <tr>
+            <th>Mbiemri:</th>
+            <td><input type="text" name="mbiemri" /></th>
+         </tr>
+
+         <tr>
+            <th>Dit&#235;lindja:</th>
+            <td><input type="date" name="datelindja"/></td>
+          </tr>
+
+         <tr>
+             <th>Vendlindja:</th>
+             <td><input type="text" name="vendlindja"/></td>
+         </tr>
+
+         <tr>
+            <th>Gjinia:</th>
+            <td><abbr title="Mashkull">M</abbr>
+                <input type="radio" name="gjinia" />
+                <abbr title="Femer">F</abbr>
+                <input type="radio" name="gjinia" />
+            </td>
+         </tr>
+
+         <tr>
+            <th>Statusi:</th>
+            <td><select name="statusi">
+                <optgroup label="Student">
+                 <option value="praneFshn">Pran&#235; FSHN </option>
+                 <option value="joFshn">Jo pran&#235; FSHN </option>
+                <optgroup label="Jo Student">
+                 <option value="nxenes">Nx&#235;n&#235;s n&#235; cikle m&#235; t&#235; ulta</option>
+                 <option value="interesuar">I interesuar p&#235;r FSHN </option>
+                 <option value="tjeter">Qytetar i thjesh&#235;t&#235;</option>
+                </optgroup>
+            </td>
+         </tr>
+
+         <tr>
+            <td colspan="2">
+             <hr>
+              <p>*N&#235;se jeni student pran&#235; FSHN luteni t&#235; plot&#235;soni dhe format m&#235; posht&#235;.</p>
+
+         </tr>
+
+         <tr>
+            <th>Dega e studimit: </th>
+            <td><input type="checkbox" name="dega1" value="Informatike" />Informatik&#235; <p></p>
+                <input type="checkbox" name="dega2"value="Matematike" />Matematik&#235; <p></p>
+                <input type="checkbox" name="dega3" value="kimi"/>Kimi<p></p>
+                <input type="checkbox" name="dega4" value="tik" />Teknologji Informacioni <P></p>
+                 <input type="checkbox" name="dega5" value="fizike" />Fizik&#235; <p></p>
+            </td>
+         </tr>
+
+         <tr>
+            <th>Nota q&#235; vler&#235;soni deg&#235;n tuaj:</th>
+            <td><input type="number" name="vleresimi" min="1" max="10"/>
+            </td>
+         </tr>
+
+         <tr>
+            <th>Adresa e <br />Emailit t&#235; shkoll&#235;s:</th>
+            <td><input type="email" name="email" value="emer.mbiemer@fshstudent.info" /></td>
+         </tr>
+
+         <tr>
+            <th>Numri Telefonit(opsional):</th>
+            <td><input type="tel" name="tel" value="+355" /></td>
+         </tr>
+        </table>
+    </fieldset>
+    <br /><br />
+    <h2 align="center">Pyetjet:</h2>
+    <h4>*N&#235;se di&#231;ka &#235;sht&#235; e paqart&#235; l&#235;reni pa plot&#235;suar.</h4> <br/> <br/>
+
+    <table border="0" cellspacing="20" cellpading="5">
+        <tr>
+            <th>Nisur nga debatet e fundit p&#235;r arsimin e lart&#235;.<br>
+            Ju nga p&#235;rvoja juaj ose (njohurit&#235;) si i gjykoni tarifat e studimit pran&#235; FSHN?
+            </th>
+            <td><input type="radio" name="zgjedhja" value="larta"/>T&#235; larta.
+            <input type="radio" name="zgjedhja" value="mes"/>Mesatare.
+            <input type="radio" name="zgjedhja" value="ulta"/>T&#235; ulta.
+            <input type="radio" name="zgjedhja" value="nukdi"/>Nuk e di.
+            </td>
+        </tr>
+
+        <tr>
+           <th>K&#235; njihni nga stafi yn&#235; ?</th>
+           <td >   <input type="checkbox" name="zgj1" value="t.r"   />prf.Tefta Rexha <p></p>
+              <input type="checkbox" name="zgj2" value="a.b" />
+              prf.Ariola Bacu <p></p>
+                 <input type="checkbox" name="zgj3" value="th.k" />prf.Theodhor Karaja <p></p>
+                <input type="checkbox" name="zgj4" value="i.n" />prf.Ilia Ninka <p></p>
+                 <input type="checkbox" name="zgj5" value="e.a" />prf.Eduard Andoni <p></p>
+                 <input type="checkbox" name="zgj6" value="s.d" />prf.Spiro Drushku <p></p>
+                 <input type="checkbox" name="zgj7" value="xh.t" />prf.Xhezair Teliti <p></p>
+                <input type="checkbox" name="zgj8" value="e.g" />prf.Eglantina Kallu&#231;i <p></p>
+            </td>
+        </tr>
+
+        <tr>
+           <th>Ju do zgjidhnit FSHN p&#235;r  studimet tuaja ose t&#235; af&#235;rve?
+           </th>
+           <td><input type="radio" name="sugjerimi" />Po
+               <input type="radio" name="sugjerimi" />Jo
+           </td>
+        </tr>
+
+        <tr>
+            <th>P&#235;rse?</th>
+            <td><input type="text" name="arsye" /></td>
+        </tr>
+        <tr>
+           <th>Me njohurit&#235; tuaja si do i gjykonit ambientet e FSHN?
+           </th>
+           <td><textarea name="ambientet">Mund t&#235; shkruani gjykimin k&#235;tu....</textarea>
+           </td>
+        </tr>
+        <tr>
+           <th>Mendimi juaj p&#235;r FSHN:</th>
+           <td><textarea name="mendimi">Shkruani k&#235;tu....</textarea>
+           </th>
+        </tr>
+
+        <tr>
+           <th>Vler&#235;simi p&#235;r Fakultetin:</th>
+           <td><input type="number" name="numVleresimi" min="1" max="10"/>
+           </td>
+        </tr>
+        <tr></tr>
+        <tr>
+           <td></td>
+           <td><input type="reset" name="reset" value="PASTRO" />
+
+           <input type="submit" name="submit" value="D&#203;RGO"></td>
+        </tr>
+        </table>
+</form>
+     <h1 align="center">Ju Falenderojm&#235;!</h1>
+     </body>
+     </html>
